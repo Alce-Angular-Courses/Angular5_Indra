@@ -1,2 +1,3 @@
-# Angular5_Indra
-Curso de Angular 5 en Indra (Madrid)
+# Angular5 Indra #
+
+Curso de Angular 5 en Indra (Madrid, Noviembre 2017)
