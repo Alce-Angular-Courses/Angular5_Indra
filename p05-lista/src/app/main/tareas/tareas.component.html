@@ -1,0 +1,20 @@
+
+<div class="card">
+    <div class="card-header">
+      <h3>Tareas</h3>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="tarea">Escribe una tarea</label>
+        <input type="text" [(ngModel)]="sTarea" 
+          class="form-control" name="tarea" id="tarea" >
+      </div>
+      <button class="btn btn-primary"
+        (click)="addTarea()" >Añadir</button>
+    </div>
+    <div class="card-footer text-muted">
+      <ul>
+        <li *ngFor="let tarea of aTareas">{{tarea}}</li>
+      </ul>
+    </div>
+  </div>
