@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
     <article class="row alto">
       <app-tareas class="col-12 mt-4"></app-tareas>
       <app-acumulador class="col-12 mt-4"></app-acumulador>
+      <app-pipes lass="col-12 mt-4"></app-pipes>
     </article>
 </div>
   `,
