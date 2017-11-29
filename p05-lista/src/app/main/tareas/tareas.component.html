@@ -12,9 +12,23 @@
       <button class="btn btn-primary"
         (click)="addTarea()" >Añadir</button>
     </div>
-    <div class="card-footer text-muted">
-      <ul>
-        <li *ngFor="let tarea of aTareas">{{tarea}}</li>
+    <div *ngIf="aTareas.length; then ideasTemplate else vacioTemplate"
+      class="card-footer text-muted"></div>
+
+    <ng-template #ideasTemplate> 
+      <h4>Lista de tareas</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"
+        *ngFor="let tarea of aTareas; let i = index">
+          <span class="col">{{tarea}}</span>
+          <button class="btn btn-sm btn-danger"
+          (click)="deleteTarea(i)">Eliminar</button>
+        </li>
       </ul>
-    </div>
+    </ng-template>
+
+    <ng-template #vacioTemplate>
+      <p>Animate y añade alguna tarea</p>
+    </ng-template>
+   
   </div>

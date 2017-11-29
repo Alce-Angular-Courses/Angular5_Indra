@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <div class="container">
     <article class="row alto">
-      <app-tareas class="col"></app-tareas>
+      <app-tareas class="col-12 mt-4"></app-tareas>
+      <app-acumulador class="col-12 mt-4"></app-acumulador>
     </article>
 </div>
   `,
