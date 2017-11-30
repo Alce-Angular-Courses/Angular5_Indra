@@ -8,12 +8,14 @@ import { AboutModule } from './about/about.module';
 import { AutoresModule } from './autores/autores.module';
 import { CatalogoModule } from './catalogo/catalogo.module';
 import { NoticiasModule } from './noticias/noticias.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     appRouting,
     MainModule,
