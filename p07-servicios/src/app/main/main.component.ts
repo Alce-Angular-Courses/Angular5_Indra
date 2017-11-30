@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div class="container">
       <article class="row alto">
-        <app-mock-libros class="col"></app-mock-libros>
-        <app-mock-libros-async class="col"></app-mock-libros-async>
+        <app-mock-libros class="col-6"></app-mock-libros>
+        <app-mock-libros-async class="col-6"></app-mock-libros-async>
+        <app-buscar-google class="mt-4"></app-buscar-google>
       </article>
     </div>
   `,
